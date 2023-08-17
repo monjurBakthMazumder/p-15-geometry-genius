@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css and daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="">
+    <a href="#home" class="text-2xl md:text-4xl font-bold text-center py-2 md:py-5 rounded-lg border-2 sticky top-0 z-50 bg-white block">Come learn geometry</a>
+    <div id="home" class="flex flex-col md:flex-row gap-5 p-5 md:p-10">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 h-fit">
+            <!-- card -->
+            <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/triangle.png" alt="img"/></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">Triangle</h2>
+                  <p class="text-sm font-medium">Area (A) = 0.5 x base x height</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="triangleBase" type="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="Base"><span>cm</span>
+                    <input id="triangleHeight" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="Height"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="triangleArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="triangleBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/rectangle.png" alt="img" /></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">Rectangle</h2>
+                  <p class="text-sm font-medium">Area (A) = Wight x Length</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="rectangleWight" type="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="Wight"><span>cm</span>
+                    <input id="rectangleLength" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="Length"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="rectangleArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="rectangleBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/parallelogram.png" alt="img"/></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">Parallelogram</h2>
+                  <p class="text-sm font-medium">Area (A) = base x height</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="parallelogramBase" type="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="Base"><span>cm</span>
+                    <input id="parallelogramHeight" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="Height"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="parallelogramArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="parallelogramBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+             <!-- card -->
+             <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/rhombus.png" alt="img"/></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">rhombus</h2>
+                  <p class="text-sm font-medium">Area (A) = 0.5 x d1 x d2</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="d1" type="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="d1"><span>cm</span>
+                    <input id="d2" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="d2"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="rhombusArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="rhombusBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+             <!-- card -->
+             <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/pentagon.png" alt="img"/></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">pentagon</h2>
+                  <p class="text-sm font-medium">Area (A) = 0.5 x p x b</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="p" type="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="p"><span>cm</span>
+                    <input id="b" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="b"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="pentagonArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="pentagonBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card border-2 pt-5">
+                <figure class="rounded-none mx-5"><img src="./images/ellipse.png" alt="img"/></figure>
+                <div class="card-body text-center">
+                  <h2 class="text-2xl font-bold">Ellipse</h2>
+                  <p class="text-sm font-medium">Area (A) = π x a x b</p>
+                  <div class="flex flex-nowrap justify-between items-center text-base">
+                    <input id="a" tyae="number" class="border-2 rounded-sm w-[35%] mr-1" placeholder="a"><span>cm</span>
+                    <input id="bb" type="number" class="border-2 rounded-sm w-[35%] mr-1 ml-auto" placeholder="bb"><span>cm</span>
+                  </div>
+                  <p class="text-xl font-semibold">Area = <span id="ellipseArea">00</span> cm<sup>2</sup></p>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-primary" id="ellipseBtn">Calculate</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+            <div class="overflow-x-auto border-2 rounded-2xl h-fit p-5">
+                <table class="table">
+                  <!-- head -->
+                  <caption class="text-2xl font-bold underline">Area Calculation</caption>
+                  <thead>
+                    <tr>
+                      <th >Type</th>
+                      <th>Area</th>
+                      <th>Convert</th>
+                      <!-- <b>${type}</b> -->
+                    </tr>
+                  </thead>
+                  <tbody id="result">
+                  </tbody>
+                </table>
+              </div>
+    </div>
+
+    <script>
+        function getInputValue(inputId){
+            const inputFiled = document.getElementById(inputId);
+            const inputValueString = inputFiled.value;
+            const inputValue = Number(inputValueString);
+            inputFiled.value = '';
+            return inputValue;
+        }
+        function setElementInnerText(elementId,area,type){
+            const element = document.getElementById(elementId);
+            const newArea = area.toFixed(2)
+            const newAreaM = newArea / 100;
+            const newAreaMiter = newAreaM.toFixed(2);
+            element.innerText = newArea;
+            const result = document.getElementById('result');
+            const tr = document.createElement('tr');
+            console.log(tr);
+            const td1 = document.createElement('td');
+            console.log(td1);
+            td1.innerHTML = `<b>${type}</b>`;
+            console.log(td1);
+            const td2 = document.createElement('td');
+            td2.innerHTML = `<b>${newArea} cm<sup>2</sup></b>`;
+            const td3 = document.createElement('td');
+            td3.innerHTML = `<b>${newAreaMiter} m<sup>2</sup></b>`;
+            tr.appendChild(td1);
+            console.log(tr);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            result.appendChild(tr);
+            console.log(result);
+        }
+        document.getElementById('triangleBtn').addEventListener('click', function(){
+            const base = getInputValue('triangleBase'); 
+            const height = getInputValue('triangleHeight'); 
+            const area = 0.5 * base * height; 
+            setElementInnerText('triangleArea',area, 'Triangle');
+        })
+        document.getElementById('rectangleBtn').addEventListener('click', function(){
+            const wight = getInputValue('rectangleWight'); 
+            const length = getInputValue('rectangleLength'); 
+            const area = wight * length; 
+            setElementInnerText('rectangleArea',area, 'Rectangle');
+        })
+        document.getElementById('parallelogramBtn').addEventListener('click', function(){
+            const base = getInputValue('parallelogramBase'); 
+            const weight = getInputValue('parallelogramHeight'); 
+            const area = base * weight; 
+            setElementInnerText('parallelogramArea',area, 'Parallelogram');
+        })
+        document.getElementById('rhombusBtn').addEventListener('click', function(){
+            const d1 = getInputValue('d1'); 
+            const d2 = getInputValue('d2'); 
+            const area = 0.5 * d1 * d2; 
+            setElementInnerText('rhombusArea',area, 'Rhombus');
+        })
+        document.getElementById('pentagonBtn').addEventListener('click', function(){
+            const p = getInputValue('p'); 
+            const b = getInputValue('b'); 
+            const area = 0.5 * p * b; 
+            setElementInnerText('pentagonArea',area, 'Pentagon');
+        })
+        document.getElementById('ellipseBtn').addEventListener('click', function(){
+            const a = getInputValue('a'); 
+            const b = getInputValue('bb'); 
+            const area = 22/7 * a * b; 
+            setElementInnerText('ellipseArea',area, 'Ellipse');
+        })
+    </script>
+</body>
+</html>
